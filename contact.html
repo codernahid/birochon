@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>যোগাযোগ - বিরচন</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1>বিরচন</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">হোম</a></li>
+                <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+                <li><a href="activities.html">কার্যক্রম</a></li>
+                <li><a href="publications.html">প্রকাশনা</a></li>
+                <li><a href="contact.html">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>যোগাযোগ করুন</h1>
+        </section>
+
+        <section class="contact-details">
+            <div class="contact-info-detailed">
+                <h2>যোগাযোগের তথ্য</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h3>প্রধান কার্যালয়</h3>
+                        <p>মোহাম্মাদপুর</p>
+                        <p>ঢাকা-১২১২</p>
+                        <p>বাংলাদেশ</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>যোগাযোগের নম্বর</h3>
+                        <p>ফোন: +৮৮০ ১XXX-XXXXXX</p>
+                        <p>ফ্যাক্স: +৮৮০ ২-XXXXXXX</p>
+                       
+                    </div>
+                    <div class="contact-item">
+                        <h3>ইমেইল</h3>
+                        <p>সাধারণ জিজ্ঞাসা: info@birochon.org</p>
+                        <p>সদস্যপদ: member@birochon.org</p>
+                        <p>প্রকাশনা: books@birochon.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>বার্তা পাঠান</h2>                <form id="contactForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">নাম</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ইমেইল</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">ফোন নাম্বার</label>
+                        <input type="tel" id="phone" name="phone" pattern="[০-৯]+" placeholder="উদাহরণ: ০১৭১২৩৪৫৬৭৮">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">বিষয়</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">বার্তা</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" onclick="handleSubmit(event)">পাঠান</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+
+            <div class="office-hours">
+                <h2>কার্যালয়ের সময়সূচি</h2>
+                <div class="schedule">
+                    <p><strong>শনি - বৃহস্পতি:</strong> সকাল ৯টা - বিকাল ৫টা</p>
+                    <p><strong>শুক্রবার:</strong> বন্ধ</p>
+                    <p><strong>ছুটির দিন:</strong> সরকারি ছুটির দিনগুলিতে বন্ধ</p>
+                </div>
+            </div>
+        </section>
+    </main>    <footer>
+        <p>&copy; ২০২৫ বিরচন। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
